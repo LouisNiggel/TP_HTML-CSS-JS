@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.PNG">
+    <title>GéoSimulation : la carte interactive - Presse</title>
+    <!-- Polices d'écriture importées -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <!-- CDN Animations CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CDN FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CDN jQuery Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- Feuille de style global -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!-- Bouton Scroll-to-top -->
+    <button onclick="topFunction()" id="myBtn" title="Revenir en haut de la page">
+        <i class="fas fa-solid fa-angle-up"></i>
+    </button>
+    <header>
+        <!-- Titre et logo -->
+        <div class="titre">
+            <img class="logo" src="images/logo.PNG" alt="Logo GS">
+            <a href="index.html"><h1>GéoSimulation : la carte interactive</h1></a>
+        </div>
+        <nav>
+            <!-- Menu hamburger responsive -->
+            <input type="checkbox">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Barre de navigation des pages -->
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li id="rejoindre"><a href="rejoindre.html">Nous rejoindre</a>
+                    <ul id="sous">
+                        <li><a href="metiers/metier1.html">Développeur Informatique</a></li>
+                        <li><a href="metiers/metier2.html">Administrateur Base de Données</a></li>
+                        <li><a href="metiers/metier3.html">Ingénieur Système</a></li>
+                        <li><a href="metiers/metier4.html">Testeur</a></li>
+                    </ul>
+                </li>
+                <li><a href="presse.html">Presse</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Image et titre de la page -->
+        <div class="debut_img">
+            <img class="debut_mp4" src="images/business.webp" alt="Image Principale">
+            <h2>Presse</h2>
+        </div>
+        <h2 class="p_titre">Toutes les informations concernant la presse :</h2>
+        <div class="boite_presse">
+            <!-- Coordonnées du responsable de presse -->
+            <div class="presse-col">
+                <h3>Coordonnées du responsable de presse :</h3>
+                <p><i class="fa-solid fa-angle-right"></i>   Responsable: Damien TENANT</p>
+                <p><i class="fa-solid fa-angle-right"></i>   E-Mail: damien.tenant@gmail.com</p>
+                <p><i class="fa-solid fa-angle-right"></i>   N° téléphone: 05.89.56.23.89</p>
+            </div>
+            <!-- Communiqués de presse -->
+            <div class="presse-col">
+                <h3>Communiqués de presse :</h3>
+                <!-- Modal n°1 -->
+                <div id="ex1" class="modal">
+                    <h2>Communiqué du 16 août 2021</h2>
+                    <img src="images/communique-ex1.webp" alt="Communiqué n°1">
+                </div>
+                <p><a href="#ex1" rel="modal:open">Communiqué du 16 août 2021</a></p>
+                <!-- Modal n°2 -->
+                <div id="ex2" class="modal">
+                    <h2>Communiqué du 8 février 2021</h2>
+                    <img src="images/communique-ex2.webp" alt="Communiqué n°2">
+                </div>
+                <p><a href="#ex2" rel="modal:open">Communiqué du 8 février 2021</a></p>
+                <!-- Modal n°3 -->
+                <div id="ex3" class="modal">
+                    <h2>Communiqué du 15 décembre 2020</h2>
+                    <img src="images/communique-ex3.webp" alt="Communiqué n°3">
+                </div>
+                <p><a href="#ex3" rel="modal:open">Communiqué du 15 décembre 2020</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Barre de navigation de pages importantes et légales -->
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="rejoindre.html">Nous rejoindre</a></li>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li>©2022</li>
+        </ul>
+    </footer>
+    <!-- Scripts jQuery Modal -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <!-- Script global -->
+    <script src="js/script.js"></script>
+</body>
+</html>

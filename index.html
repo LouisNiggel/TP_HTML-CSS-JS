@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.PNG">
+    <title>GéoSimulation : la carte interactive - Accueil</title>
+    <!-- Polices d'écriture importées -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <!-- CDN Animations CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CDN FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Feuille de style global -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!-- Bouton Scroll-to-top -->
+    <button onclick="topFunction()" id="myBtn" title="Revenir en haut de la page">
+        <i class="fas fa-solid fa-angle-up"></i>
+    </button>
+    <header>
+        <!-- Titre et logo -->
+        <div class="titre">
+            <img class="logo" src="images/logo.PNG" alt="Logo GS">
+            <a href="index.html"><h1>GéoSimulation : la carte interactive</h1></a>
+        </div>
+        <nav>
+            <!-- Menu hamburger responsive -->
+            <input type="checkbox">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Barre de navigation des pages -->
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li id="rejoindre"><a href="rejoindre.html">Nous rejoindre</a>
+                    <ul id="sous">
+                        <li><a href="metiers/metier1.html">Développeur Informatique</a></li>
+                        <li><a href="metiers/metier2.html">Administrateur Base de Données</a></li>
+                        <li><a href="metiers/metier3.html">Ingénieur Système</a></li>
+                        <li><a href="metiers/metier4.html">Testeur</a></li>
+                    </ul>
+                </li>
+                <li><a href="presse.html">Presse</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Image et titre de la page -->
+        <div class="debut_img">
+            <video autoplay loop muted class="debut_mp4">
+                <source src="images/pexels_videos_1851190.mp4" type="video/mp4">
+            </video>
+            <h2>Simulez le monde à vos envies!</h2>
+        </div>
+        <!-- Boîtes menant aux pages importantes -->
+        <div class="boite_g">
+            <h2>Un produit pédagogique et imaginatif</h2>
+            <p>Venez découvrir notre carte interactive qui façonne le monde selon vos critères!</p>
+            <img class="boite_img" src="images/world-map.webp" alt="Image World Map"><br>
+            <a href="produit.html">En savoir plus</a>
+        </div>
+        <div class="boite_d">
+            <h2>Une équipe productive et compétente</h2>
+            <p>Notre équipe a travaillé sur la conception de ce projet depuis plus de 5 ans afin de vous proposer un produit à la hauteur de vos attentes.</p>
+            <img class="boite_img" src="images/team.webp" alt="Image Team"><br>
+            <a href="equipe.html">En savoir plus</a>
+        </div>
+        <div class="boite_g">
+            <h2>Vous souhaitez nous rejoindre?</h2>
+            <p>Aucun problème! Notre entreprise vous accueillera au sein de notre équipe pour développer des projets ambitieux.</p>
+            <img class="boite_img" src="images/members.webp" alt="Image Members"><br>
+            <a href="rejoindre.html">En savoir plus</a>
+        </div>
+        <div class="boite_d">
+            <h2>Des questions ou des remarques?</h2>
+            <p>Vous pourrez trouver vos réponses dans cette foire aux questions complète.</p>
+            <img class="boite_img" src="images/question.webp" alt="Image Question"><br>
+            <a href="faq.html">En savoir plus</a>
+        </div>
+    </main>
+    <footer>
+        <!-- Barre de navigation de pages importantes et légales -->
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="rejoindre.html">Nous rejoindre</a></li>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li>©2022</li>
+        </ul>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
